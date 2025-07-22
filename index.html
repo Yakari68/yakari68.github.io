@@ -3,11 +3,50 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <script type="application/javascript" src="main.js"></script>
     <title>Owen TRAN</title>
 </head>
 <body>
-    <p>
-        Etudiant à l'ENSISA, développeur Web/Python passionné
-    </p>
+    <header id="header" class="couleur texte-prim">
+        <nav class="navbar">
+            <div class="collapse nav-links" id="collapse">
+                <ul>
+                    <a href="./index.html#">Accueil</a>
+                    <a href="./index.html#profil">Profil</a>
+                    <a href="./index.html#portfolio">Portfolio</a>
+                    <a href="./index.html#contact">Contact</a>
+                </ul>
+            </div>
+            <button type="button" id="toggle-btn" class="toggle-btn" onclick="toggleMenu()">
+                <span>
+                    <img id="hidden-menu" class="btn" src="burger-menu.svg">
+                    <img id="shown-menu" class="btn hidebtn" src="burger-menu.svg">
+                </span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <h1 id="profil">Profil</h1>
+        <div class="grille">
+            <img src="burger-menu.svg" id="img_prf" class="img_prf">
+            <p class="texte_prf">
+                Étudiant à l'ENSISA, développeur Web/Python passionné et intéressé par de nombreux sujets comme la robotique, la musique ou encore le théatre, j'explore toujours de nombreux horizons. Optimisation, accessibilité et sécurité sont mes maîtres-mots.
+            </p>
+        </div>
+<!--
+Ajouter timeline
+-->
+        <h1 id="portfolio">Portfolio</h1>
+
+        <h1 id="contact">Contact</h1>
+        <p>
+
+        </p>
+    </main>
+    <footer>
+        <p class="text-footer">Owen TRAN, 2025</p>
+    </footer>
 </body>
 </html>
